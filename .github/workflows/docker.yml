@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - 'master'
+  schedule:
+    - cron: '13 13 13 * *'  # every 13th day of the month
+      
 
 jobs:
   docker:
